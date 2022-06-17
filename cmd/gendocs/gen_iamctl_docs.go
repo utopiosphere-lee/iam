@@ -28,7 +28,7 @@ func main() {
 	outDir, err := genutil.OutDir(path)
 	if err != nil {
 		_, _ = fmt.Fprintf(os.Stderr, "failed to get output directory: %v\n", err)
-		os.Exit(1)
+		os.Exit(1) 
 	}
 
 	// Set environment variables used by iamctl so the output is consistent,
